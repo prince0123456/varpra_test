@@ -1,1 +1,9 @@
 
+In this code, we have a todos state variable that holds an array of todo items, each of which is an object with a text property for the todo text and a timestamp property for the time the todo was added.
+
+The handleInputChange function updates the inputValue state variable as the user types into the input field. The handleAddTodo function adds a new todo item to the todos array with the current timestamp (using Date.now()) and clears the input field.
+
+The formatTimeDiff function is the same as in the previous example and formats the time difference between the current time and the given timestamp.
+
+In the return statement, we have the UI for the app, which includes an input field and a "Add Todo" button for adding new todos, as well as a <ul> element for displaying the list of todos. We use the map method to iterate over the todos array and render a <li> element for each todo item. The todo text is displayed in a <span> element with the todo-text class, and the timestamp is displayed in a <span> element with the todo-timestamp class.
+We use the formatTimeDiff function to format the timestamp for display.
